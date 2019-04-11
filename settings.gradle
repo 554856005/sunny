@@ -9,4 +9,6 @@
 
 rootProject.name = 'sunny'
 include 'registry'
+include 'config'
+include 'config-server'
 
