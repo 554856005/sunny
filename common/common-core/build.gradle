@@ -1,0 +1,11 @@
+description "服务通用基础功能"
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+dependencies {
+    implementation 'cn.hutool:hutool-all:' + project.hutoolsVersion
+    compileOnly 'org.projectlombok:lombok:' + project.lombokVersion
+    annotationProcessor 'org.projectlombok:lombok:' + project.lombokVersion
+}

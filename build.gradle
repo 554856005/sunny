@@ -1,0 +1,59 @@
+//对RootProject的配置
+buildscript {
+    repositories {
+        mavenCentral()
+//        mavenLocal() //直接使用本地maven仓库，需要自己搭建nexus
+        //阿里云
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/spring" }
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+}
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE' apply false
+    id 'com.gradle.build-scan' version '2.1'
+}
+//运行gradlew build -scan得到扫描报考，分析grade错误原因
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+}
+// 所有项目的通用配置，包括RootProject-sunny
+allprojects {
+    group = 'com.jasonli'
+    version = '0.0.1-SNAPSHOT'
+    apply plugin: 'idea'
+}
+//子项目的通用配置
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+    //插件仓库
+    repositories {
+        mavenCentral()
+//        mavenLocal() //直接使用本地maven仓库，需要自己搭建nexus
+        //阿里云
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/spring" }
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+
+    //Spring Could版本依赖管理
+    apply plugin: 'io.spring.dependency-management'
+
+    ext {
+        set('springCloudVersion', 'Greenwich.SR1')
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+        }
+    }
+}
+
