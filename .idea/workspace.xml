@@ -1579,10 +1579,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555163080689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555163233923" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -1602,7 +1603,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.sunny [wrapper]">
+  <component name="RunManager" selected="Spring Boot.ApiCoreApplication">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1738,16 +1739,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SunnyApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.jasonli-config-server_main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jasonli.configserver.SunnyApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jasonli.configserver.ConfigServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SunnyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="registry_main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jasonli.sunny.SunnyApplication" />
+    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.jasonli-registry_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jasonli.registry.RegistryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1761,12 +1762,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.SunnyApplication" />
+      <item itemvalue="Spring Boot.ApiCoreApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.RegistryApplication" />
       <item itemvalue="Gradle.sunny [init]" />
       <item itemvalue="Gradle.sunny [projects]" />
       <item itemvalue="Gradle.sunny [wrapper]" />
-      <item itemvalue="Spring Boot.SunnyApplication (1)" />
-      <item itemvalue="Spring Boot.ApiCoreApplication" />
     </list>
     <recent_temporary>
       <list>
