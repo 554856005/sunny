@@ -3,8 +3,10 @@ description "shiro,oauth2"
 dependencies {
     compile project(":common:common-core")
 
+    compile 'redis.clients:jedis:3.0.1'
     implementation 'org.springframework:spring-context-support'
-    implementation 'org.apache.shiro:shiro-spring:' + project.shrioVersion
+    compile 'org.apache.shiro:shiro-spring:' + project.shrioVersion
+//    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

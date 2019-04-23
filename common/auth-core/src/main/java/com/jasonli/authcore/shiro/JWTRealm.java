@@ -1,4 +1,4 @@
-package com.jasonli.authcore.realms;
+package com.jasonli.authcore.shiro;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
@@ -6,18 +6,17 @@ import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
- * AuthRealm
+ * JWTRealm
  *
  * @Description
  * @Author JasonLi
  * @Date 2019-04-16 0:44
  */
-public class AuthRealm extends AuthorizingRealm {
-    @Autowired
-    UserService userService;
+@Service
+public class JWTRealm extends AuthorizingRealm {
 
     /**
      * 授权
