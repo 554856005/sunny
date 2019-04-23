@@ -1,12 +1,12 @@
 //对RootProject的配置
 buildscript {
     repositories {
-        mavenCentral()
-//        mavenLocal() //直接使用本地maven仓库，需要自己搭建nexus
+        mavenLocal() //直接使用本地maven仓库，需要自己搭建nexus
         //阿里云
         maven { url "https://maven.aliyun.com/repository/public" }
         maven { url "https://maven.aliyun.com/repository/spring" }
         maven { url "http://repo.maven.apache.org/maven2" }
+        mavenCentral()
     }
 }
 plugins {
@@ -34,12 +34,12 @@ subprojects {
     }
     //插件仓库
     repositories {
-        mavenCentral()
-//        mavenLocal() //直接使用本地maven仓库，需要自己搭建nexus
+        mavenLocal() //直接使用本地maven仓库，需要自己搭建nexus
         //阿里云
         maven { url "https://maven.aliyun.com/repository/public" }
         maven { url "https://maven.aliyun.com/repository/spring" }
         maven { url "http://repo.maven.apache.org/maven2" }
+        mavenCentral()
     }
 
     //Spring Could版本依赖管理

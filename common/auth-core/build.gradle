@@ -1,0 +1,10 @@
+description "shiro,oauth2"
+
+dependencies {
+    compile project(":common:common-core")
+
+    implementation 'org.springframework:spring-context-support'
+    implementation 'org.apache.shiro:shiro-spring:' + project.shrioVersion
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

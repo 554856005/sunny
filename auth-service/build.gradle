@@ -1,0 +1,10 @@
+description "用户中心"
+
+dependencies {
+    compile project(":common:api-core")
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-jooq'
+    runtimeOnly 'mysql:mysql-connector-java'
+
+}

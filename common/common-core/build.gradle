@@ -8,4 +8,5 @@ dependencies {
     implementation 'cn.hutool:hutool-all:' + project.hutoolsVersion
     compileOnly 'org.projectlombok:lombok:' + project.lombokVersion
     annotationProcessor 'org.projectlombok:lombok:' + project.lombokVersion
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
