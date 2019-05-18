@@ -22,10 +22,6 @@ J
 config-server/build.gradle,9\e\9e9343d55cfc75598e543414688c2fc07bb5b139
 M
 common/auth-core/build.gradle,9\b\9bd5731f902159bb8c5a45f083bc912b67f5a6ff
-y
-Icommon/auth-core/src/main/java/com/jasonli/authcore/realms/AuthRealm.java,d\f\df56efad5b0cad8a72ea122d707ed557dfb01f19
-~
-Ncommon/auth-core/src/main/java/com/jasonli/authcore/services/ShiroService.java,1\7\17279e0f0d55cfffa2a3436326823f6fbc85a764
 }
 Mcommon/auth-core/src/main/java/com/jasonli/authcore/utils/PasswordHelper.java,d\e\de8561dee8a02e4a858f08497e479514195425e4
 Å
@@ -44,5 +40,15 @@ O
 common/common-core/build.gradle,2\e\2e00dfef3a37752c78591de65d4627027ae83979
 @
 log4j.properties,7\3\7330e4252652b61093498eabc26c3cadee5d89b7
-ê
-`common/auth-core/src/main/java/com/jasonli/authcore/factory/FilterChainDefinitionMapBuilder.java,4\c\4c0566e3b174971aa4f18a90297519cbd3bd9401
+Ä
+Pcommon/auth-core/src/main/java/com/jasonli/authcore/shiro/ShiroCacheManager.java,6\e\6ed1a23f86f6c6ba0e158ddc5cb0dcd7fccc28b4
+{
+Kcommon/auth-core/src/main/java/com/jasonli/authcore/config/ShiroConfig.java,6\b\6bb31911be415dddd8955b06e0016a95ea70c73e
+u
+Ecommon/auth-core/src/main/java/com/jasonli/authcore/utils/Consts.java,c\8\c85fbd8c8e1df69baea6bd04ad456b86043f8351
+w
+Gcommon/auth-core/src/main/java/com/jasonli/authcore/shiro/JWTRealm.java,5\c\5cbede154d6fcc957b19d3222a08eac42baba2c9
+z
+Jcommon/auth-core/src/main/java/com/jasonli/authcore/utils/CacheClient.java,7\f\7f1d1290d57b614cad8c9dd9959c91b33b685f14
+y
+Icommon/auth-core/src/main/java/com/jasonli/authcore/shiro/ShiroCache.java,0\1\018e3702000f7e961a70caf2c83db25ddf88ff22
